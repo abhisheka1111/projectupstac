@@ -72,8 +72,8 @@ public class LabRequestController {
         //Implement this method to return the list of test requests assigned to current tester(make use of the above created User object)
         //Make use of the findByTester() method from testRequestQueryService class
         // For reference check the method getForTests() method from LabRequestController class
-       User currenttester = userLoggedInService.getLoggedInUser();
-        return testRequestQueryService.findByTester(currenttester);
+       User tester = userLoggedInService.getLoggedInUser();
+        return testRequestQueryService.findByTester(tester);
        
 
 
